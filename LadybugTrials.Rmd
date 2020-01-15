@@ -35,6 +35,9 @@ ggplot(ladybird, aes(x=Habitat, y=number, colour = colour))+
 Nice one tash !
 Let's get going on another graph
 
+
+lel not quite, gor some work to do ;)
+
 ```{r}
 
 ggplot(ladybird, aes(x=Site, y = number, colour = Habitat))+
