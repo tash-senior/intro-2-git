@@ -23,11 +23,29 @@ Let's break this down into industrial and Rural on a graph
 
 ```{r}
 
-ggplot(ladybird, aes(x=Habitat, y=number))+
-  geom_bar(stat = "identity")+
-  scale_fill_manual(values = c("purple", "blue")) +
+ggplot(ladybird, aes(x=Habitat, y=number, colour = colour))+
+  geom_point(stat = "identity")+
   theme_classic()
   
+
+
+
+```
+
+Nice one tash !
+Let's get going on another graph
+
+```{r}
+
+ggplot(ladybird, aes(x=Site, y = number, colour = Habitat))+
+  geom_bar(stat="identity")+
+  scale_colour_manual()
+
+
+ggplot(ladybird, aes(x=Site, y = number, colour = Habitat))+
+  geom_point()
+
+
 
 
 
