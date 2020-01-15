@@ -1,0 +1,34 @@
+---
+title: "LadyBUGs-my trial"
+author: "Tash Senior"
+date: "15/01/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Ladybird data
+
+``` {r}
+
+ladybird <- read.csv('ladybirds.csv')
+glimpse(ladybird)
+
+```
+
+Great, we're in the dataset. 
+Let's break this down into industrial and Rural on a graph
+
+```{r}
+
+ggplot(ladybird, aes(x=Habitat, y=number))+
+  geom_bar(stat = "identity")+
+  scale_fill_manual(values = c("purple", "blue")) +
+  theme_classic()
+  
+
+
+
+```
