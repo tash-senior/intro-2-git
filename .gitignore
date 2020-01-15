@@ -1,3 +1,13 @@
+# Faff
+faff.R
+
+# html
+*.html
+
+# Good to ignore pdfs and word files
+*.pdf
+*.docx
+
 # History files
 .Rhistory
 .Rapp.history
